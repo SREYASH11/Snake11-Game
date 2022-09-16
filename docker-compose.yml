@@ -1,0 +1,10 @@
+version: '2'
+services:
+  snake:
+    image: 'dockershrysh11/snake-98:new'
+    environment:
+      - "PORT:3000"
+    ports:
+      - "80:3000"
+    volumes:
+      - ./:/app
