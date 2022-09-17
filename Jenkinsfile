@@ -5,7 +5,8 @@ node ('master'){
        checkout scm
     }  
     stage('SAST'){
-        build 'SECURITY-SAST-SNYK'
+        //build 'SECURITY-SAST-SNYK'
+       sh 'echo SECURITY-SAST-SNYK'
     }
 
     
