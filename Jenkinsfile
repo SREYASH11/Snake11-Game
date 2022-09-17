@@ -14,7 +14,7 @@ node ('ubuntu-app-agent'){
         sh 'echo Build-andTag'
     /* This builds the actual image; synonymous to
          * docker build on the command line */
-        app = docker.build("dockershrysh11/snake-98")
+        app = docker.build("dockershrysh11/snake-98:new")
     }
     stage('Post-to-dockerhub') {
     
